@@ -1,0 +1,15 @@
+django-admin startproject
+django manage.py runserver
+django manage.py migrate
+django manage.py createsuperuser
+python manage.py startapp 
+In settings.py provide name of startapp in installed apps
+create  urls.py in tasks directory
+go to base urls.py file and add include in import separated by comma[path('',include('tasks.urls'))]
+In tasks create a folder name 'templates' and inside 'templates' create a folder 'tasks' and inside 'tasks' create list.html
+creating models.py
+then migrate our database using  python manage.py makemigrations then  python manage.py migrate 
+make register in admin.py
+render admin tasks in templates and make changes in views.py and list.htnl using for loop
+create forms.py  in tasks directory and make changes in views.py according to forms.py
+create another file name Update_task.html in tasks folder inside templates
